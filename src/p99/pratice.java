@@ -1,25 +1,25 @@
 package p99;
 
 public class pratice {
-	public static String numbering(int init, int limit) {
-		int i = init;
-		String output = "";
-		
-		while(i < limit) {
-		output += i;
-		i++;
-		}
-		return output;
-		
-		
+	public static void main(String[] args) {
+		String delimiter = "-------";
+		printA(delimiter);
+		printB(delimiter);
+		delimiter = "*****";
+		printA(delimiter);
+		printB(delimiter);
 		
 	}
+
+	private static void printA(String delimiter ) {
+		System.out.println(delimiter);
+		System.out.println("A");
+		System.out.println("A");
+	}
 	
-	
-	public static void main(String[] args) {
-		String result = numbering(0, 5);
-		
-		System.out.println(result);
-		
+	private static void printB(String delimiter) {
+		System.out.println(delimiter);
+		System.out.println("b");
+		System.out.println("b");
 	}
 }
